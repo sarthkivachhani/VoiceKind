@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "VoiceClick",
+  "version": "1.0",
+  "permissions": ["scripting", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
