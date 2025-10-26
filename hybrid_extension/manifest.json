@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Hybrid Voice & Gesture Control",
+  "version": "1.0",
+  "description": "Control webpages with voice commands and optional Python-based gestures",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Hybrid Voice & Gesture Control"
+  }
+}
